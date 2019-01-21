@@ -1,0 +1,30 @@
+<table>
+  <tr>
+  <th>id</th>
+  <th>name</th>
+  <th>year</th>
+  <th>color</th>
+  <th>pantone_value</th>
+  </tr>
+  <tr *ngFor="let post of posts">
+    <!-- <td>{{post.userId}}</td>
+    <td>{{post.id}}</td>
+    <td>{{post.title}}</td>
+    <td>{{post.body}}</td> -->
+    
+    <td>{{post.data.id}}</td>
+    <td>{{post.data.first_name}}</td>
+    <td>{{post.data.last_name}}</td>
+    <td>{{post.data.avatar}}</td>
+    <td><input type="button" value="Delete" (click)='deleteUser(post)'></td>
+    <td><input type="button" value="Update" (click)='updateUser(post)'></td>
+
+    <!-- <td>{{post.data.id}}</td>
+    <td>{{post.data.name}}</td>
+    <td>{{post.data.year}}</td>
+    <td>{{post.data.color}}</td>
+    <td>{{post.data.pantone_value}}</td>  -->
+  </tr>
+
+</table>
+ <app-post></app-post> 
